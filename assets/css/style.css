@@ -1,0 +1,435 @@
+/* Fontlar */
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+
+/* Ayarlamalar */
+html{scroll-behavior: smooth;}body{
+    background-color: black;
+    margin: 0;
+    font-family: 'Cantarell', sans-serif;
+    transition: 0.2s ease-in;
+}
+::selection{
+    background: #ff0000;
+    color: white;
+}
+::-webkit-scrollbar{
+    background: #000;
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background: gray;
+}
+
+/* Banner & Menu */
+.banner-image > img{
+    width: 100%;
+    height: 450px;
+    object-fit: scale-down;
+}
+.banner-image .mobile_banner{
+    display: none;
+}
+.menu{
+    padding: 10px;
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    transform: 250ms all;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+.menu .menu-box{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    align-items: center;
+}
+.menu .menu-box h1{
+    color: #fff;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.menu .menu-box i{
+    color: #fff;
+    transition: 250ms all;
+    font-size: 30px;
+}
+.menu .menu-box a{
+    color: #fff;
+    transition: 250ms all;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* Animasyon */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, #fff 100%, #fff 0%);
+    background-size: 0% 2px;
+    background-position: bottom left;
+}
+.menu .menu-box a:hover{
+    background-size: 100% 2px;
+}
+.menu .menu-box div:nth-child(2){
+    display: none;
+}
+
+/* Particles */
+#contents{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}  
+
+/* Kimiz */
+.kimiz{
+    padding: 10px;
+    margin-top: 20px;
+}
+.kimiz .ortala{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kimiz .ortala div{
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+.kimiz .ortala img{
+    width: 350px;
+}
+.kimiz .ortala h1{
+    color: white;
+}
+.kimiz .ortala p{
+    color: white;
+}
+
+/* Kurucular */
+.kurucularimiz{
+    padding: 10px;
+    margin-top: 20px;
+}
+.kurucularimiz > h1{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+.kurucularimiz .kurucu-flex{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+.kurucularimiz .kurucu-flex div{
+    width: 500px;
+    margin: 15px;
+    padding: 10px;
+}
+.kurucularimiz .kurucu-flex div img{
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.kurucularimiz .kurucu-flex div h1{
+    color: #fff;
+    text-align: center;
+}
+.kurucularimiz .kurucu-flex div p{
+    color: white;
+    text-align: center;
+}
+
+/* Misyon */
+.misyon{
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.misyon h1{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+.misyon p{
+    text-align: center;
+    color: #fff;
+}
+
+/* İletişim */
+.iletisim{
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.iletisim h1{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+.iletisim p{
+    text-align: center;
+    color: #fff;
+}
+.iletisim a{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, #ff0000 100%, #ff0000 0%);
+    background-size: 0% 2px;
+    background-position: bottom left;
+    transition: 250ms all;
+    color: red;
+    text-decoration: none;
+}
+.iletisim a:hover{
+    background-size: 100% 2px;
+}
+
+/* Yükleniyor Ekranı */
+.yukleniyor{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 9999999999999;
+    transition: 250ms all;
+}
+.yukleniyor .yazi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+/* Footer */
+.footer{
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #1a1a1a;
+}
+.footer .footer-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.footer .footer-flex img{
+    width: 250px;
+}
+.footer .footer-flex h1{
+    color: white;
+    text-align: center;
+}
+.footer .footer-flex a{
+    text-align: center;
+    color: red;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    transition: 250ms all
+}
+.footer .footer-flex a:hover{
+    transform: translate(5px);
+}
+.footer span{
+    color: white;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Sağ Taraf */
+.sag-taraf{
+    position: fixed;
+    left: 0%;
+    top: 50%;
+    transform: translate(-0%, -50%);
+    z-index: 30;
+}
+.sag-taraf .column-2{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+.sag-taraf .column-2 i{
+    cursor: pointer;
+}
+
+/* Sponsorlar */
+/* .bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 700;
+}
+#sponsorlar{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a1a1a;
+    z-index: 500;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, .2);
+    width: 500px;
+}
+#sponsorlar > #sponsor-flex{
+    display: flex;
+    justify-content: space-around;
+}
+#sponsorlar > #sponsor-flex > div{
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+#sponsorlar > #sponsor-flex > div a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 150px;
+    padding: 5px;
+    background-image: linear-gradient(90deg, #fff 100%, #fff 0%);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    transition: .1s ease-in;
+}
+#sponsorlar > #sponsor-flex > div a:hover{
+    background-size: 100% 3px;
+}
+#sponsorlar > #sponsor-flex > div > img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} */
+
+/* White Mod */
+.beyaz_mod{
+    background-color: #fff;
+    color: #000 !important;
+}
+.beyaz_mod .menu{
+    background-color: rgb(245, 245, 245);
+}
+.beyaz_mod .menu .menu-box h1{
+    color: #000;
+}
+.beyaz_mod .menu .menu-box a{
+    color: #000;
+    background-image: linear-gradient(90deg, #000 100%, #000 0%);
+}
+.beyaz_mod .banner-image{
+    background-color: #000;
+}
+.beyaz_mod .kimiz .ortala h1{
+    color: #000;
+}
+.beyaz_mod .kimiz .ortala p{
+    color: #000;
+}
+.beyaz_mod .kurucularimiz > h1{
+    color: #000;
+}
+.beyaz_mod .kurucularimiz .kurucu-flex div{
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+.beyaz_mod .kurucularimiz .kurucu-flex h1{
+    color: #000;
+}
+.beyaz_mod .kurucularimiz .kurucu-flex p{
+    color: #000;
+}
+.beyaz_mod .misyon h1{
+    color: #000;
+}
+.beyaz_mod .iletisim h1{
+    color: #000;
+}
+.beyaz_mod .misyon p{
+    color: #000;
+}
+.beyaz_mod .iletisim p{
+    color: #000;
+}
+.beyaz_mod .footer{
+    background-color: rgb(245, 245, 245);
+}
+.beyaz_mod .footer .footer-flex h1{
+    color: #000;
+}
+.beyaz_mod .sag-taraf .column-2{
+    background-color: rgb(245, 245, 245);
+    color: #000;
+}
+.beyaz_mod .footer span{
+    color: #000;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 800px){
+    .menu .menu-box div:nth-child(1){
+        display: none;
+    }
+    .menu .menu-box div:nth-child(3){
+        display: block;
+        margin: 0 auto;
+    }
+    .menu .menu-box{
+        justify-content: space-between;
+    }
+    .banner-image > img{
+        display: none;
+    }
+    .banner-image .mobile_banner{
+        display: initial !important;
+        height: 200px;
+    }
+    .kimiz .ortala{
+        flex-direction: column;
+        text-align: center;
+    }
+    .kimiz .ortala img{
+        width: 250px;
+    }
+    .kimiz .ortala div{
+        width: auto;
+        display: initial;
+        margin: initial;
+    }
+    .kurucu-flex{
+        flex-direction: column;
+    }
+    .kurucularimiz > h1{
+        word-wrap: break-word;
+    }
+    .kurucularimiz .kurucu-flex div{
+        width: auto;
+        margin: initial;
+    }
+    .footer-flex{
+        flex-direction: column;
+    }
+    .footer-flex img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .menu .menu-box div:nth-child(2){
+        display: none;
+    }
+}
